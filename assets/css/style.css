@@ -90,6 +90,10 @@ HEADER
     position: relative;
 }
 
+.navbar-expand-xl .navbar-nav .nav-link {
+    margin: 0;
+}
+
 .nav-link:hover {
     color: var(--primary);
 }
