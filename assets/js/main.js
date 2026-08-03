@@ -132,73 +132,73 @@ avatars.forEach(item => {
 scroll progress
 ==========================*/
 
-// window.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
 
-//     const scrollTop = window.scrollY;
+    const scrollTop = window.scrollY;
 
-//     const docHeight = document.body.scrollHeight - window.innerHeight;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
 
-//     const progress = (scrollTop / docHeight) * 100;
+    const progress = (scrollTop / docHeight) * 100;
 
-//     document.querySelector(".scroll-progress").style.width = progress + "%";
+    document.querySelector(".scroll-progress").style.width = progress + "%";
 
-// });
+});
 
 /*==========================
 Back To Top
 ==========================*/
-// const backTop = document.querySelector(".back-top");
+const backTop = document.querySelector(".back-top");
 
-// window.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
 
-//     if (window.scrollY > 400) {
+    if (window.scrollY > 400) {
 
-//         backTop.classList.add("active");
+        backTop.classList.add("active");
 
-//     } else {
+    } else {
 
-//         backTop.classList.remove("active");
+        backTop.classList.remove("active");
 
-//     }
+    }
 
-// });
+});
 
-// backTop.onclick = () => {
+backTop.onclick = () => {
 
-//     window.scrollTo({
+    window.scrollTo({
 
-//         top: 0,
+        top: 0,
 
-//         behavior: "smooth"
+        behavior: "smooth"
 
-//     });
+    });
 
-// }
+}
 
 /*==========================
 Page Loader
 ==========================*/
-// window.addEventListener("load", () => {
+window.addEventListener("load", () => {
 
-//     document.querySelector(".page-loader").classList.add("hide");
+    document.querySelector(".page-loader").classList.add("hide");
 
-// });
+});
 
 /*==========================
 Smooth Scroll
 ==========================*/
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-//     anchor.addEventListener("click", function (e) {
+    anchor.addEventListener("click", function (e) {
 
-//         e.preventDefault();
+        e.preventDefault();
 
-//         document.querySelector(this.getAttribute("href")).scrollIntoView({
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
 
-//             behavior: "smooth"
+            behavior: "smooth"
 
-//         });
+        });
 
-//     });
+    });
 
-// });
+});
