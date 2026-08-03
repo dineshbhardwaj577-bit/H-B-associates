@@ -533,6 +533,7 @@ ABOUT
 ==========================*/
 .about-section {
     padding: 110px 0;
+    overflow-x: hidden;
 }
 
 .section-tag {
@@ -653,6 +654,7 @@ SERVICES
 ===========================*/
 .services-section {
     background: #fafafa;
+    overflow-x: hidden;
 }
 
 .service-card {
@@ -737,6 +739,7 @@ WHY CHOOSE US
 =========================*/
 .why-choose {
     background: linear-gradient(to bottom, #ffffff, #f8f9fb);
+    overflow-x: hidden;
 }
 
 .why-card {
@@ -814,6 +817,7 @@ PROCESS
 =========================*/
 .process-section {
     background: #fff;
+    overflow-x: hidden;
 }
 
 .process-card {
