@@ -180,6 +180,16 @@ HEADER
     }
 }
 
+@media(max-width:1199.85px) {
+    .navbar-expand-xl .navbar-nav .nav-link {
+        margin: 10px 5px;
+    }
+
+    .navbar-expand-xl .navbar-nav .nav-link::after {
+        display: none;
+    }
+}
+
 /*==============================
 HERO SECTION
 ===============================*/
@@ -2090,7 +2100,7 @@ Footer CTA New
 ----------------------- ---------- */
 .back-top {
     position: fixed;
-    right: 25px;
+    right: 5%;
     bottom: 35px;
     width: 55px;
     height: 55px;
