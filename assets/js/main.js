@@ -178,11 +178,11 @@ backTop.onclick = () => {
 /*==========================
 Page Loader
 ==========================*/
-window.addEventListener("load", () => {
+// window.addEventListener("load", () => {
 
-    document.querySelector(".page-loader").classList.add("hide");
+//     document.querySelector(".page-loader").classList.add("hide");
 
-});
+// });
 
 /*==========================
 Smooth Scroll
