@@ -1514,7 +1514,6 @@ CONSULTATION SECTION
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg, #111821, #1d2733, #28313A);
-    padding: 120px 0;
     z-index: 1;
 }
 
@@ -2074,7 +2073,7 @@ Footer CTA New
     }
 
     .footer-main {
-        padding-top: 130px;
+        padding: 0px 0 30px;
     }
 
     .footer-bottom {
