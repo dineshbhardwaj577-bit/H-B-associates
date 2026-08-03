@@ -1,10 +1,10 @@
 // AOS
-AOS.init({
-    duration: 800,
-    once: true,
-    disable: window.innerWidth < 768
-    // offset: 80
-});
+// AOS.init({
+//     duration: 800,
+//     once: true,
+//     disable: window.innerWidth < 768
+//     offset: 80
+// });
 
 // Sticky Header
 window.addEventListener("scroll", function () {
