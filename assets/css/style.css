@@ -2188,6 +2188,34 @@ Footer CTA New
     overflow: hidden;
 }
 
+/* Debug */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+[class*="col-"] {
+    min-width: 0;
+}
+
+.container,
+.container-fluid {
+    overflow: hidden;
+}
+
 @media (max-width:768px) {
     .hero-shape {
         width: 260px;
