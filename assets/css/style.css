@@ -83,6 +83,12 @@ HEADER
     height: 55px;
 }
 
+@media(max-width:991px) {
+    .navbar-brand img {
+        height: 45px;
+    }
+}
+
 .nav-link {
     font-weight: 600;
     color: var(--secondary);
@@ -2095,6 +2101,12 @@ Footer CTA New
     transition: .15s;
 }
 
+@media(max-width:1199.85px) {
+    .scroll-progress {
+        display: none;
+    }
+}
+
 /* ----------------------- ---------- 
     Back To Top  
 ----------------------- ---------- */
@@ -2126,6 +2138,12 @@ Footer CTA New
 
 .back-top:hover {
     transform: translateY(-5px);
+}
+
+@media(max-width:1199.85px) {
+    .back-top {
+        display: none;
+    }
 }
 
 /* ----------------------- ---------- 
