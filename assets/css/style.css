@@ -2218,38 +2218,6 @@ Footer CTA New
     }
 }
 
-/* ==========================================
-   Mobile - Hide All Decorative Shapes
-========================================== */
-@media (max-width: 991px) {
-
-    /* Hero */
-    .hero-shape,
-    .hero-circle,
-    /* Website Section */
-    .website-wrapper::before,
-    /* Consultation Section */
-    .consultation-wrapper::before,
-    .consultation-wrapper::after,
-    /* Footer CTA */
-    .footer-cta::before,
-    .footer-cta::after,
-    /* Inner Banner */
-    .banner-shape,
-    .shape-1,
-    .shape-2,
-    .shape-3,
-    /* Generic Shapes */
-    .circle,
-    .circle-1,
-    .circle-2,
-    .shape,
-    .bg-shape,
-    .floating-shape {
-        display: none !important;
-    }
-}
-
 /* --------------------------- ---------- ---- ----------  ---------- 
                             Service Inner Page CSS
 --------------------------- ---------- ---- ----------  ----------  */
