@@ -187,18 +187,18 @@ window.addEventListener("load", () => {
 /*==========================
 Smooth Scroll
 ==========================*/
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-    anchor.addEventListener("click", function (e) {
+//     anchor.addEventListener("click", function (e) {
 
-        e.preventDefault();
+//         e.preventDefault();
 
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
+//         document.querySelector(this.getAttribute("href")).scrollIntoView({
 
-            behavior: "smooth"
+//             behavior: "smooth"
 
-        });
+//         });
 
-    });
+//     });
 
-});
+// });
