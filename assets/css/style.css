@@ -2187,6 +2187,36 @@ Footer CTA New
     overflow: hidden;
 }
 
+@media (max-width:768px) {
+    .hero-shape {
+        width: 260px;
+        height: 260px;
+        right: -80px;
+        top: -80px;
+    }
+
+    .shape-1 {
+        width: 220px;
+        height: 220px;
+        left: -90px;
+        top: -90px;
+    }
+
+    .shape-2 {
+        width: 180px;
+        height: 180px;
+        right: -60px;
+        bottom: -60px;
+    }
+
+    .website-wrapper::before {
+        width: 250px;
+        height: 250px;
+        right: -80px;
+        top: -80px;
+    }
+}
+
 /* --------------------------- ---------- ---- ----------  ---------- 
                             Service Inner Page CSS
 --------------------------- ---------- ---- ----------  ----------  */
