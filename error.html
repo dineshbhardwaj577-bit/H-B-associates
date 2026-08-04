@@ -106,29 +106,38 @@ HEADER
         </nav>
     </header>
     <!--==============================
-Thank You Section
+Error / 404 page Section
 ================================-->
-    <section class="thank-section">
-        <div class="thank-shape shape-1"></div>
-        <div class="thank-shape shape-2"></div>
+    <section class="error-section">
+        <div class="error-shape shape-1"></div>
+        <div class="error-shape shape-2"></div>
         <div class="container">
-            <div class="thank-card">
-                <img src="assets/images/logo.jpg" class="thank-logo" alt="HB Associates">
-                <div class="success-icon">
-                    <i class="bi bi-check-lg"></i>
+            <div class="error-card">
+                <!-- Logo -->
+                <img src="assets/images/logo.jpg" alt="HB Associates" class="error-logo">
+                <!-- Error Icon -->
+                <div class="error-icon">
+                    <i class="bi bi-exclamation-lg"></i>
                 </div>
-                <span class="thank-tag"> Enquiry Submitted Successfully </span>
-                <h1> Thank You! </h1>
-                <p> We have received your enquiry successfully. <br> One of our financial experts will contact you
-                    within <strong>24 business hours.</strong>
-                </p>
-                <div class="thank-btns">
-                    <a href="tel:8003803246" class="theme-btn">
-                        <i class="bi bi-telephone-fill"></i> Call Now </a>
+                <span class="error-tag"> Something Went Wrong </span>
+                <h1> Oops! </h1>
+                <p> The page you're looking for doesn't exist or your request couldn't be completed. <br> Please try
+                    again or contact our support team. </p>
+                <!-- Buttons -->
+                <div class="error-btns">
                     <a href="index.html" class="theme-btn">
                         <i class="bi bi-house-door-fill"></i> Back To Home </a>
                 </div>
-                <div class="redirect-text"> Redirecting to Home in <span id="countdown"> 10 </span> seconds... </div>
+                <!-- Contact Box -->
+                <div class="help-box">
+                    <h5> Need Immediate Help? </h5>
+                    <a href="tel:8003803246">
+                        <i class="bi bi-telephone-fill"></i> +91 8003803246 </a>
+                    <a href="tel:8769537180">
+                        <i class="bi bi-telephone-fill"></i> +91 8769537180 </a>
+                    <a href="mailto:hbassociates97@gmail.com">
+                        <i class="bi bi-envelope-fill"></i> hbassociates97@gmail.com </a>
+                </div>
             </div>
         </div>
     </section>
@@ -278,29 +287,6 @@ FOOTER
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-
-        let time = 15;
-
-        const counter = document.getElementById("countdown");
-
-        const timer = setInterval(() => {
-
-            time--;
-
-            counter.innerHTML = time;
-
-            if (time <= 0) {
-
-                clearInterval(timer);
-
-                window.location.href = "index.html";
-
-            }
-
-        }, 1000);
-
-    </script>
 </body>
 
 </html>
