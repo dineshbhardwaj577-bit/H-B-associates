@@ -106,29 +106,73 @@ HEADER
         </nav>
     </header>
     <!--==============================
-Thank You Section
+Privacy Policy Section
 ================================-->
-    <section class="thank-section">
-        <div class="thank-shape shape-1"></div>
-        <div class="thank-shape shape-2"></div>
+    <section class="privacy-section">
+        <div class="privacy-shape shape-1"></div>
+        <div class="privacy-shape shape-2"></div>
         <div class="container">
-            <div class="thank-card">
-                <img src="assets/images/logo.jpg" class="thank-logo" alt="HB Associates">
-                <div class="success-icon">
-                    <i class="bi bi-check-lg"></i>
+            <div class="privacy-card">
+                <img src="assets/images/logo.jpg" class="privacy-logo" alt="HB Associates">
+                <div class="privacy-header">
+                    <span> Privacy Policy </span>
+                    <h1> Your Privacy Matters To Us </h1>
+                    <p> Last Updated: August 2026 </p>
                 </div>
-                <span class="thank-tag"> Enquiry Submitted Successfully </span>
-                <h1> Thank You! </h1>
-                <p> We have received your enquiry successfully. <br> One of our financial experts will contact you
-                    within <strong>24 business hours.</strong>
-                </p>
-                <div class="thank-btns">
-                    <a href="tel:8003803246" class="theme-btn">
-                        <i class="bi bi-telephone-fill"></i> Call Now </a>
-                    <a href="index.html" class="theme-btn">
-                        <i class="bi bi-house-door-fill"></i> Back To Home </a>
+                <div class="privacy-content">
+                    <h3> 1. Introduction </h3>
+                    <p> HB Associates respects your privacy and is committed to protecting your personal information.
+                        This Privacy Policy explains how we collect, use and protect your information when you use our
+                        website and services. </p>
+                    <h3> 2. Information We Collect </h3>
+                    <p> When you contact us through our website, we may collect information such as: </p>
+                    <ul>
+                        <li>Name</li>
+                        <li>Phone Number</li>
+                        <li>Email Address</li>
+                        <li>Service Requirements</li>
+                        <li>Messages or enquiry details</li>
+                    </ul>
+                    <h3> 3. How We Use Your Information </h3>
+                    <p> The information collected is used to: </p>
+                    <ul>
+                        <li>Respond to your enquiries</li>
+                        <li>Provide financial consultation services</li>
+                        <li>Share relevant service information</li>
+                        <li>Improve our customer experience</li>
+                    </ul>
+                    <h3> 4. Financial Services Information </h3>
+                    <p> HB Associates provides financial consultancy services including investments, insurance, loans,
+                        taxation and related solutions. Any financial decision should be made after proper consultation
+                        and understanding of associated risks. </p>
+                    <h3> 5. Data Security </h3>
+                    <p> We take reasonable measures to protect your personal information from unauthorized access,
+                        misuse or disclosure. </p>
+                    <h3> 6. Third Party Services </h3>
+                    <p> Our website may use third-party services such as email communication tools, analytics tools and
+                        payment or financial platforms. These services have their own privacy policies. </p>
+                    <h3> 7. Cookies </h3>
+                    <p> Our website may use cookies to improve user experience, analyze website performance and provide
+                        better services. </p>
+                    <h3> 8. Your Rights </h3>
+                    <p> You may request information about your personal data or ask us to update or remove your
+                        information by contacting us. </p>
+                    <h3> 9. Contact Us </h3>
+                    <div class="privacy-contact">
+                        <p>
+                            <strong> HB Associates </strong>
+                        </p>
+                        <p>
+                            <i class="bi bi-telephone-fill"></i> +91 8003803246
+                        </p>
+                        <p>
+                            <i class="bi bi-telephone-fill"></i> +91 8769537180
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope-fill"></i> hbassociates97@gmail.com
+                        </p>
+                    </div>
                 </div>
-                <div class="redirect-text"> Redirecting to Home in <span id="countdown"> 10 </span> seconds... </div>
             </div>
         </div>
     </section>
@@ -279,29 +323,6 @@ FOOTER
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-
-        let time = 15;
-
-        const counter = document.getElementById("countdown");
-
-        const timer = setInterval(() => {
-
-            time--;
-
-            counter.innerHTML = time;
-
-            if (time <= 0) {
-
-                clearInterval(timer);
-
-                window.location.href = "index.html";
-
-            }
-
-        }, 1000);
-
-    </script>
 </body>
 
 </html>

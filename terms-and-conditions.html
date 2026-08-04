@@ -106,29 +106,66 @@ HEADER
         </nav>
     </header>
     <!--==============================
-Thank You Section
+Privacy Policy Section
 ================================-->
-    <section class="thank-section">
-        <div class="thank-shape shape-1"></div>
-        <div class="thank-shape shape-2"></div>
+    <section class="terms-section">
+        <div class="terms-shape shape-1"></div>
+        <div class="terms-shape shape-2"></div>
         <div class="container">
-            <div class="thank-card">
-                <img src="assets/images/logo.jpg" class="thank-logo" alt="HB Associates">
-                <div class="success-icon">
-                    <i class="bi bi-check-lg"></i>
+            <div class="terms-card">
+                <img src="assets/images/logo.png" alt="HB Associates" class="terms-logo">
+                <div class="terms-header">
+                    <span> Terms & Conditions </span>
+                    <h1> Terms of Use </h1>
+                    <p> Last Updated : August 2026 </p>
                 </div>
-                <span class="thank-tag"> Enquiry Submitted Successfully </span>
-                <h1> Thank You! </h1>
-                <p> We have received your enquiry successfully. <br> One of our financial experts will contact you
-                    within <strong>24 business hours.</strong>
-                </p>
-                <div class="thank-btns">
-                    <a href="tel:8003803246" class="theme-btn">
-                        <i class="bi bi-telephone-fill"></i> Call Now </a>
-                    <a href="index.html" class="theme-btn">
-                        <i class="bi bi-house-door-fill"></i> Back To Home </a>
+                <div class="terms-content">
+                    <h3>1. Acceptance of Terms</h3>
+                    <p> By accessing and using the HB Associates website, you agree to comply with these Terms &
+                        Conditions. If you do not agree, please discontinue the use of this website. </p>
+                    <h3>2. Services</h3>
+                    <p> HB Associates provides financial consultancy services including investment planning, mutual
+                        funds, insurance, loans, taxation, GST services, financial advisory and website development.
+                    </p>
+                    <p> The information provided on this website is for general informational purposes only. </p>
+                    <h3>3. User Responsibilities</h3>
+                    <ul>
+                        <li>Provide accurate information while submitting enquiries.</li>
+                        <li>Do not misuse or attempt unauthorized access to our website.</li>
+                        <li>Do not upload harmful or malicious content.</li>
+                    </ul>
+                    <h3>4. Financial Advice Disclaimer</h3>
+                    <p> Financial products involve market risks. Investment decisions should always be made after proper
+                        consultation and reviewing all official documents. </p>
+                    <h3>5. Intellectual Property</h3>
+                    <p> All content, images, graphics, logos and website materials belong to HB Associates unless
+                        otherwise stated. </p>
+                    <p> Unauthorized copying or redistribution is prohibited. </p>
+                    <h3>6. Third Party Links</h3>
+                    <p> Our website may contain links to third-party websites. HB Associates is not responsible for
+                        their content, privacy practices or services. </p>
+                    <h3>7. Limitation of Liability</h3>
+                    <p> HB Associates shall not be liable for any direct or indirect loss, financial loss or damages
+                        resulting from the use of this website or reliance on its content. </p>
+                    <h3>8. Changes to Terms</h3>
+                    <p> We reserve the right to modify these Terms & Conditions at any time. Updated versions will be
+                        posted on this page. </p>
+                    <h3>9. Governing Law</h3>
+                    <p> These Terms & Conditions shall be governed by the applicable laws of India. </p>
+                    <h3>10. Contact Us</h3>
+                    <div class="terms-contact">
+                        <p><strong>HB Associates</strong></p>
+                        <p>
+                            <i class="bi bi-telephone-fill"></i> +91 8003803246
+                        </p>
+                        <p>
+                            <i class="bi bi-telephone-fill"></i> +91 8769537180
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope-fill"></i> hbassociates97@gmail.com
+                        </p>
+                    </div>
                 </div>
-                <div class="redirect-text"> Redirecting to Home in <span id="countdown"> 10 </span> seconds... </div>
             </div>
         </div>
     </section>
@@ -279,29 +316,6 @@ FOOTER
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-
-        let time = 15;
-
-        const counter = document.getElementById("countdown");
-
-        const timer = setInterval(() => {
-
-            time--;
-
-            counter.innerHTML = time;
-
-            if (time <= 0) {
-
-                clearInterval(timer);
-
-                window.location.href = "index.html";
-
-            }
-
-        }, 1000);
-
-    </script>
 </body>
 
 </html>
