@@ -262,3 +262,31 @@ if (contactForm) {
     });
 
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const current = window.location.pathname.split("/").pop();
+
+    const links = document.querySelectorAll(".navbar-nav .nav-link");
+
+    links.forEach(link => {
+
+        link.classList.remove("active");
+
+        let href = link.getAttribute("href");
+
+        // #section ko remove karke sirf file name compare karega
+        let page = href.split("#")[0];
+
+        if (page === "") page = "index.html";
+
+        if (page === current || (current === "" && page === "index.html")) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
