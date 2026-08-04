@@ -2223,6 +2223,246 @@ Footer CTA New
 }
 
 /* --------------------------- ---------- ---- ----------  ---------- 
+                           Thank You Page CSS
+--------------------------- ---------- ---- ----------  ----------  */
+.thank-you-page {
+    background: #f5f7fb;
+    overflow: hidden;
+}
+
+.thank-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.thank-shape {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.thank-shape.shape-1 {
+    width: 420px;
+    height: 420px;
+    right: -150px;
+    top: -150px;
+    background: rgba(255, 107, 53, .08);
+}
+
+.thank-shape.shape-2 {
+    width: 300px;
+    height: 300px;
+    left: -120px;
+    bottom: -120px;
+    background: rgba(40, 49, 58, .05);
+}
+
+.thank-card {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    margin: auto;
+    background: #fff;
+    border-radius: 30px;
+    padding: 70px;
+    text-align: center;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .08);
+    border: 1px solid rgba(0, 0, 0, .05);
+    animation: fadeUp .7s ease;
+}
+
+.thank-logo {
+    max-width: 220px;
+    margin-bottom: 35px;
+}
+
+.success-icon {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    background: #22c55e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 60px;
+    box-shadow: 0 20px 45px rgba(34, 197, 94, .35);
+    animation: pop 1s ease;
+}
+
+.thank-tag {
+    display: inline-block;
+    background: #e9f9ef;
+    color: #22c55e;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.thank-card h1 {
+    font-size: 52px;
+    color: #28313A;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+.thank-card p {
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.thank-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    text-align: left;
+    margin-bottom: 45px;
+}
+
+.thank-services div {
+    background: #f7f8fb;
+    padding: 16px 20px;
+    border-radius: 14px;
+    font-weight: 500;
+    color: #28313A;
+}
+
+.thank-services i {
+    color: #22c55e;
+    margin-right: 10px;
+}
+
+.thank-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.outline-btn {
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    border-radius: 50px;
+    border: 2px solid #28313A;
+    color: #28313A;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.outline-btn:hover {
+    background: #28313A;
+    color: #fff;
+}
+
+.redirect-text {
+    color: #888;
+    font-size: 15px;
+}
+
+.redirect-text span {
+    color: #ff6b35;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(.3);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*=========================
+Responsive
+=========================*/
+@media(max-width:991px) {
+    .thank-card {
+        padding: 50px 35px;
+    }
+
+    .thank-card h1 {
+        font-size: 42px;
+    }
+}
+
+@media(max-width:767px) {
+    .thank-card {
+        padding: 40px 25px;
+        border-radius: 20px;
+    }
+
+    .thank-logo {
+        max-width: 170px;
+    }
+
+    .success-icon {
+        width: 95px;
+        height: 95px;
+        font-size: 46px;
+    }
+
+    .thank-card h1 {
+        font-size: 34px;
+    }
+
+    .thank-card p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .thank-services {
+        grid-template-columns: 1fr;
+    }
+
+    .thank-btns {
+        flex-direction: column;
+    }
+
+    .theme-btn,
+    .outline-btn {
+        width: 100%;
+    }
+
+    .thank-shape {
+        display: none;
+    }
+}
+
+/* --------------------------- ---------- ---- ----------  ---------- 
                             Service Inner Page CSS
 --------------------------- ---------- ---- ----------  ----------  */
 /*==================================
