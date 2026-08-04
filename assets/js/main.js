@@ -227,7 +227,7 @@ if (contactForm) {
 
         emailjs.sendForm(
 
-            "service_wrong123",
+            "service_fu2l83v",
 
             "template_9h9ikva",
 
