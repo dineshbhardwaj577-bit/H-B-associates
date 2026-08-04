@@ -778,34 +778,38 @@ START FREE CONSULTATION
                                 <h3> Get Free Consultation </h3>
                                 <p> Fill the form and our financial expert will contact you shortly. </p>
                             </div>
-                            <form>
+                            <form id="contactForm">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Full Name">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Full Name" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="tel" class="form-control" placeholder="Phone Number">
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            placeholder="Phone Number" maxlength="10" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="email" class="form-control" placeholder="Email Address">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Email Address" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <select class="form-select">
-                                            <option> Select Service </option>
-                                            <option> Investment Planning </option>
-                                            <option> Mutual Funds </option>
-                                            <option> Insurance </option>
-                                            <option> Home Loan </option>
-                                            <option> GST Return </option>
-                                            <option> Website Design </option>
+                                        <select class="form-select" id="service" name="service" required>
+                                            <option value=""> Select Service </option>
+                                            <option value=""> Investment Planning </option>
+                                            <option value=""> Mutual Funds </option>
+                                            <option value=""> Insurance </option>
+                                            <option value=""> Home Loan </option>
+                                            <option value=""> GST Return </option>
+                                            <option value=""> Website Design </option>
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <textarea rows="5" class="form-control"
-                                            placeholder="Tell us about your requirement"></textarea>
+                                        <textarea rows="5" class="form-control" id="message" name="message"
+                                            placeholder="Tell us about your requirement" required></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button type="submit" class="theme-btn w-100"> Get Free Consultation </button>
+                                        <button type="submit" id="submitBtn" class="theme-btn w-100"> Get Free
+                                            Consultation </button>
                                     </div>
                                 </div>
                             </form>
@@ -968,6 +972,7 @@ FOOTER
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

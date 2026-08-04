@@ -202,3 +202,61 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 
 });
+
+/*==========================================
+EMAILJS CONTACT FORM
+==========================================*/
+
+emailjs.init("5Ka0DLU3LweFxqjeK");
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const submitBtn = document.getElementById("submitBtn");
+
+        submitBtn.disabled = true;
+
+        const btnText = submitBtn.innerHTML;
+
+        submitBtn.innerHTML = "Sending...";
+
+        emailjs.sendForm(
+
+            "service_fu2l83v",
+
+            "template_9h9ikva",
+
+            this
+
+        ).then(function () {
+
+            submitBtn.innerHTML = "Submitted Successfully";
+
+            contactForm.reset();
+
+            setTimeout(function () {
+
+                window.location.href = "thank-you.html";
+
+            }, 1500);
+
+        }).catch(function (error) {
+
+            console.log(error);
+
+            alert("Something went wrong. Please try again.");
+
+            submitBtn.disabled = false;
+
+            submitBtn.innerHTML = btnText;
+
+        });
+
+    });
+
+}
