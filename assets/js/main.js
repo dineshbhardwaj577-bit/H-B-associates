@@ -249,11 +249,13 @@ if (contactForm) {
 
             console.log(error);
 
-            alert("Something went wrong. Please try again.");
+            submitBtn.innerHTML = "Error";
 
-            submitBtn.disabled = false;
+            setTimeout(function () {
 
-            submitBtn.innerHTML = btnText;
+                window.location.href = "error.html";
+
+            }, 1500);
 
         });
 
