@@ -3215,6 +3215,12 @@ Responsive
     height: 100%;
 }
 
+@media(max-width:991px) {
+    .enquiry-left {
+        display: none;
+    }
+}
+
 .modal-logo {
     width: 180px;
     margin-bottom: 30px;
