@@ -16,6 +16,46 @@ window.addEventListener("scroll", function () {
     }
 });
 
+
+//mobile header
+const menu = document.getElementById("menu");
+const menuIcon = document.querySelector(".menu-icon");
+
+if (menu && menuIcon) {
+
+    menu.addEventListener("show.bs.collapse", function () {
+        menuIcon.classList.remove("bi-list");
+        menuIcon.classList.add("bi-x-lg");
+    });
+
+    menu.addEventListener("hide.bs.collapse", function () {
+        menuIcon.classList.remove("bi-x-lg");
+        menuIcon.classList.add("bi-list");
+    });
+
+}
+
+
+//mobile menu header close after click menu
+
+const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function () {
+
+        const bsCollapse = bootstrap.Collapse.getInstance(menu);
+
+        if (bsCollapse) {
+            bsCollapse.hide();
+        }
+
+    });
+
+});
+
+
+
 // Counter
 const counters = document.querySelectorAll(".counter");
 
@@ -209,56 +249,69 @@ EMAILJS CONTACT FORM
 
 emailjs.init("5Ka0DLU3LweFxqjeK");
 
-const contactForm = document.getElementById("contactForm");
+document.querySelectorAll(".contactForm").forEach(function (form) {
 
-if (contactForm) {
-
-    contactForm.addEventListener("submit", function (e) {
+    form.addEventListener("submit", function (e) {
 
         e.preventDefault();
 
-        const submitBtn = document.getElementById("submitBtn");
-
-        submitBtn.disabled = true;
+        const submitBtn = this.querySelector('button[type="submit"]');
 
         const btnText = submitBtn.innerHTML;
 
+        submitBtn.disabled = true;
         submitBtn.innerHTML = "Sending...";
 
         emailjs.sendForm(
-
             "service_fu2l83v",
-
             "template_9h9ikva",
-
             this
-
-        ).then(function () {
+        ).then(() => {
 
             submitBtn.innerHTML = "Submitted Successfully";
 
-            contactForm.reset();
+            this.reset();
 
-            setTimeout(function () {
+            setTimeout(() => {
 
                 window.location.href = "thank-you.html";
 
             }, 1500);
 
-        }).catch(function (error) {
+        }).catch((error) => {
 
             console.log(error);
 
-            submitBtn.innerHTML = "Error";
+            submitBtn.disabled = false;
 
-            setTimeout(function () {
+            submitBtn.innerHTML = btnText;
 
-                window.location.href = "error.html";
-
-            }, 1500);
+            window.location.href = "error.html";
 
         });
 
     });
 
-}
+});
+
+/*==========================================
+Enquary CONTACT FORM
+==========================================*/
+
+window.addEventListener("load", function () {
+
+    if (!sessionStorage.getItem("popupShown")) {
+
+        setTimeout(function () {
+
+            const modal = new bootstrap.Modal(document.getElementById("enquiryModal"));
+
+            modal.show();
+
+            sessionStorage.setItem("popupShown", "yes");
+
+        }, 1000);
+
+    }
+
+});
