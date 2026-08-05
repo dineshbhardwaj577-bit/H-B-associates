@@ -38,9 +38,7 @@ if (menu && menuIcon) {
 
 //mobile menu header close after click menu
 
-const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-
-navLinks.forEach(link => {
+document.querySelectorAll(".navbar-nav .nav-link, .theme-btn").forEach(link => {
 
     link.addEventListener("click", function () {
 
